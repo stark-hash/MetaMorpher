@@ -15,10 +15,10 @@ FSUB_GROUP = os.environ.get("FSUB_GROUP", "Sunrises24BotSupport")
 DATABASE_URI = os.environ.get("DATABASE_URI", "mongodb+srv://UPLOADXPRO24BOT:UPLOADXPRO24BOT@cluster0.hjfk60f.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 CAPTION = os.environ.get("CAPTION", "")
-group = environ.get('GROUP', '-1002128043143')
+group = environ.get('GROUP', '-4542636641')
 GROUP = int(group) if group and id_pattern.search(group) else None
 #ALL FILES UPLOADED - CREDITS 🌟 - @Sunrises_24
-SUNRISES_PIC= "https://graph.org/file/bd91761f6e938e2e6d23a.jpg"  # Replace with your Telegraph link
+SUNRISES_PIC= "https://telegra.ph/file/24db284be19cde9651ccb.jpg"  # Replace with your Telegraph link
 AUTH_USERS = int(os.environ.get("AUTH_USERS", '6469754522'))
 WEBHOOK = bool(os.environ.get("WEBHOOK", True))
 PORT = int(os.environ.get("PORT", "8080"))

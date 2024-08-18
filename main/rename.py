@@ -1,5 +1,5 @@
-#TG : @Sunrises_24
-#ALL FILES UPLOADED - CREDITS 🌟 - @Sunrises_24
+#TG : @TGTesla
+#ALL FILES UPLOADED - CREDITS 🌟 - @TGTesla
 import subprocess
 import os
 import time
@@ -56,7 +56,7 @@ EXTRACT_ENABLED = True
 
 
 
-#ALL FILES UPLOADED - CREDITS 🌟 - @Sunrises_24
+#ALL FILES UPLOADED - CREDITS 🌟 - @TGTesla
 # Command handler to start the interaction (only in admin)
 @Client.on_message(filters.command("bsettings") & filters.chat(ADMIN))
 async def bot_settings_command(_, msg):
@@ -93,7 +93,7 @@ async def display_bot_settings_inline(msg):
     await msg.reply_text("Use inline buttons to manage your settings:", reply_markup=keyboard)
 
 
-#ALL FILES UPLOADED - CREDITS 🌟 - @Sunrises_24
+#ALL FILES UPLOADED - CREDITS 🌟 - @TGTesla
 @Client.on_callback_query(filters.regex("del"))
 async def closed(bot, msg):
     try:
@@ -157,7 +157,7 @@ async def toggle_merge_video_callback(_, callback_query):
 # Callback query handler for the "sunrises24_bot_updates" button
 @Client.on_callback_query(filters.regex("^sunrises24_bot_updates$"))
 async def sunrises24_bot_updates_callback(_, callback_query):
-    await callback_query.answer("MADE BY @SUNRISES24BOTUPDATES ❤️", show_alert=True)    
+    await callback_query.answer("MADE BY @StarkBotUpdates ❤️", show_alert=True)    
 
 
 async def update_settings_message(message):
@@ -1981,7 +1981,7 @@ async def extract_video(bot, msg: Message):
     await safe_edit_message(sts, "🔼 Uploading extracted video... ⚡")
     try:
         output_extension = os.path.splitext(extracted_file)[1]
-        output_file = os.path.join(os.path.dirname(downloaded), f"Extracted_By_Sunrises_24_Video{output_extension}")
+        output_file = os.path.join(os.path.dirname(downloaded), f"Extracted_By_TGTesla_Video{output_extension}")
         os.rename(extracted_file, output_file)
 
         await bot.send_document(
@@ -2283,10 +2283,10 @@ async def mediainfo_handler(client: Client, message: Message):
 
         # Remove date from the media info
         media_info_html = (
-            f"<strong>SUNRISES 24 BOT UPDATES</strong><br>"
+            f"<strong>STARK BOT UPDATES</strong><br>"
             f"<strong>MediaInfo X</strong><br>"
             f"{media_info_html}"
-            f"<p>Rights Designed By Sᴜɴʀɪsᴇs Hᴀʀsʜᴀ 𝟸𝟺 🇮🇳 ᵀᴱᴸ</p>"
+            f"<p>Rights Designed By @FDRenameBot</p>"
         )
 
         # Save the media info to an HTML file
@@ -2304,18 +2304,18 @@ async def mediainfo_handler(client: Client, message: Message):
         # Upload the media info to Telegraph
         response = telegraph.post(
             title="MediaInfo",
-            author="SUNRISES 24 BOT UPDATES",
-            author_url="https://t.me/Sunrises24BotUpdates",
+            author="STARK BOT UPDATES",
+            author_url="https://t.me/StarkBotUpdates",
             text=media_info_html
         )
         link = f"https://graph.org/{response['path']}"
 
         # Prepare the final message with the Telegraph link
         message_text = (
-            f"SUNRISES 24 BOT UPDATES\n"
+            f"STARK BOT UPDATES\n"
             f"MediaInfo X\n\n"
             f"[View Info on Telegraph]({link})\n"
-            f"Rights designed by Sᴜɴʀɪsᴇs Hᴀʀsʜᴀ 𝟸𝟺 🇮🇳 ᵀᴱᴸ"
+            f"Rights designed by @FDRenameBot"
         )
 
         # Send HTML file and Telegraph link
@@ -2530,15 +2530,15 @@ async def broadcast(bot, msg: Message):
     await msg.reply_document('broadcast_log.txt')
 
 
-#ALL FILES UPLOADED - CREDITS 🌟 - @Sunrises_24
+#ALL FILES UPLOADED - CREDITS 🌟 - @TGTesla
 #FUNCTION ABOUT HANDLER
 @Client.on_message(filters.command("about"))
 async def about_command(bot, msg):
     about_text = """
-<b>✯ Mʏ Nᴀᴍᴇ : <a href=https://t.me/MetaMorpher24Bot>𝐌𝐞𝐭𝐚𝐌𝐨𝐫𝐩𝐡𝐞𝐫 🌟</a></b>
-<b>✯ Dᴇᴠᴇʟᴏᴘᴇʀ 🧑🏻‍💻 : <a href=https://t.me/Sunrises_24>𝐒𝐔𝐍𝐑𝐈𝐒𝐄𝐒™ ⚡</a></b>
-<b>✯ Uᴘᴅᴀᴛᴇs 📢 : <a href=https://t.me/Sunrises24BotUpdates>𝐔𝐏𝐃𝐀𝐓𝐄𝐒 📢</a></b>
-<b>✯ Sᴜᴘᴘᴏʀᴛ ✨ : <a href=https://t.me/Sunrises24BotUpdates>𝐒𝐔𝐏𝐏𝐎𝐑𝐓 ✨</a></b>
+<b>✯ Mʏ Nᴀᴍᴇ : <a href=https://t.me/FDRenameBot>Rename Bot 🌟</a></b>
+<b>✯ Dᴇᴠᴇʟᴏᴘᴇʀ 🧑🏻‍💻 : <a href=https://t.me/TGTesla>𝕋𝔼𝕊𝕃𝔸™ ⚡</a></b>
+<b>✯ Uᴘᴅᴀᴛᴇs 📢 : <a href=https://t.me/StarkBotUpdates>𝐔𝐏𝐃𝐀𝐓𝐄𝐒 📢</a></b>
+<b>✯ Sᴜᴘᴘᴏʀᴛ ✨ : <a href=https://t.me/StarkBotUSupport>𝐒𝐔𝐏𝐏𝐎𝐑𝐓 ✨</a></b>
 <b>✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs 📊 : ᴠ2.5 [Sᴛᴀʙʟᴇ]</b>
     """
     await msg.reply_text(about_text)
@@ -2594,13 +2594,13 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.
 
  💭• Tʜɪs Bᴏᴛ Is Fᴏʟʟᴏᴡs ᴛʜᴇ 𝟸GB Bᴇʟᴏᴡ Fɪʟᴇs Tᴏ Tᴇʟᴇɢʀᴀᴍ.\n• 𝟸GB Aʙᴏᴠᴇ Fɪʟᴇs Tᴏ Gᴏᴏɢʟᴇ Dʀɪᴠᴇ.
  
-🔱 𝐌𝐚𝐢𝐧𝐭𝐚𝐢𝐧𝐞𝐝 𝐁𝐲 : <a href='https://t.me/Sunrises_24'>𝐒𝐔𝐍𝐑𝐈𝐒𝐄𝐒™</a></b>
+🔱 𝐌𝐚𝐢𝐧𝐭𝐚𝐢𝐧𝐞𝐝 𝐁𝐲 : <a href='https://t.me/TGTesla'>𝕋𝔼𝕊𝕃𝔸 ™</a></b>
     
    """
     await msg.reply_text(help_text)
     
 
-#ALL FILES UPLOADED - CREDITS 🌟 - @Sunrises_24
+#ALL FILES UPLOADED - CREDITS 🌟 - @TGTesla
 #Ping
 @Client.on_message(filters.command("ping"))
 async def ping(bot, msg):

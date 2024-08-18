@@ -5,7 +5,7 @@ import os
 
 #ALL FILES UPLOADED - CREDITS 🌟 - @Sunrises_24
 PROGRESS_BAR = """
-╭───[**•PROGRESS BAR•**]───⍟
+╭───[**•PROGRESS•**]───⍟
 │
 ├<b>{5}</b>
 │
